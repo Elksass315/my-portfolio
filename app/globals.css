@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+  --background: #020817;
+  --foreground: #e2e8f0;
+  --muted: #0f172a;
+  --accent: #38bdf8;
+  --accent-subtle: rgba(56, 189, 248, 0.2);
+  --gold: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.25), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.2), transparent 42%),
+    radial-gradient(circle at 50% 80%, rgba(248, 113, 113, 0.18), transparent 45%),
+    linear-gradient(160deg, #020617 0%, #020617 35%, #050b1f 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#__next,
+html,
+body {
+  width: 100%;
+}
+
+::selection {
+  background: rgba(251, 191, 36, 0.35);
+  color: #0b1220;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.7));
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(120deg, rgba(56, 189, 248, 0.6), rgba(251, 191, 36, 0.4));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.orbital-sheen {
+  position: absolute;
+  inset: -40%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 60%);
+  filter: blur(50px);
+  animation: orbit 24s linear infinite;
+  transform-origin: center;
+}
+
+.tech-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 2.5rem;
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.05);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.floating {
+  animation: float 12s ease-in-out infinite;
+}
