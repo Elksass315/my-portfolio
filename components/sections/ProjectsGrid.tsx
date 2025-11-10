@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import { projectShowcase } from "@/lib/site";
@@ -66,9 +65,9 @@ export function ProjectsGrid({ limit }: ProjectsGridProps) {
                             ))}
                         </ul>
                         <div className="mt-auto pt-2">
-                            
+
                             {project.linkUrl && (
-                                <Link
+                                <a
                                     href={project.linkUrl}
                                     target="_blank"
                                     rel="noreferrer"
@@ -76,7 +75,7 @@ export function ProjectsGrid({ limit }: ProjectsGridProps) {
                                 >
                                     {project.linkLabel}
                                     <ExternalLink className="h-4 w-4" />
-                                </Link>
+                                </a>
                             )}
                         </div>
                     </div>

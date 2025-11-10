@@ -111,22 +111,22 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.65, delay: 0.35, ease: "easeOut" }}
                     >
-                        <Link href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
+                        <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
                             <Linkedin className="h-4 w-4" />
                             LinkedIn
-                        </Link>
-                        <Link href={siteConfig.social.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
+                        </a>
+                        <a href={siteConfig.social.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
                             <Github className="h-4 w-4" />
                             GitHub
-                        </Link>
-                        <Link href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 hover:text-sky-300">
+                        </a>
+                        <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 hover:text-sky-300">
                             <Mail className="h-4 w-4" />
                             Email
-                        </Link>
-                        <Link href={siteConfig.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
+                        </a>
+                        <a href={siteConfig.whatsapp} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-sky-300">
                             <MessageCircle className="h-4 w-4" />
                             WhatsApp
-                        </Link>
+                        </a>
                     </motion.div>
                 </motion.div>
                 <motion.div

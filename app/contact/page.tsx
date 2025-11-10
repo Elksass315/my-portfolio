@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Mail, MapPin, Phone, Send, Linkedin, Github } from "lucide-react";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -79,7 +78,7 @@ export default function ContactPage() {
                 </p>
                 <div className="space-y-4">
                     {contactMethods.map(({ label, value, href, icon: Icon }) => (
-                        <Link
+                        <a
                             key={label}
                             href={href}
                             className="group flex items-center gap-3 rounded-3xl border border-slate-800/60 bg-slate-950/70 px-5 py-4 text-sm text-slate-200 transition hover:border-sky-400/60 hover:text-sky-200"
@@ -91,7 +90,7 @@ export default function ContactPage() {
                                 <span className="text-xs uppercase tracking-[0.3em] text-slate-400">{label}</span>
                                 <span>{value}</span>
                             </div>
-                        </Link>
+                        </a>
                     ))}
                     <div className="flex items-center gap-3 rounded-3xl border border-slate-800/60 bg-slate-950/70 px-5 py-4 text-sm text-slate-200">
                         <MapPin className="h-5 w-5 text-sky-300" />
@@ -100,7 +99,7 @@ export default function ContactPage() {
                             <span>{siteConfig.location}</span>
                         </div>
                     </div>
-                    <Link
+                    <a
                         href={siteConfig.whatsapp}
                         target="_blank"
                         rel="noreferrer"
@@ -108,7 +107,7 @@ export default function ContactPage() {
                     >
                         Message on WhatsApp
                         <Send className="h-4 w-4" />
-                    </Link>
+                    </a>
                 </div>
             </div>
             <div className="glass-card rounded-[2.5rem] border border-slate-800/60 p-8">

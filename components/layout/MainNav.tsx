@@ -90,7 +90,7 @@ export function MainNav() {
 
                 <div className="hidden items-center gap-3 md:flex">
                     {socialLinks.map(({ href, icon: Icon, label }) => (
-                        <Link
+                        <a
                             key={label}
                             href={href}
                             target={href.startsWith("http") ? "_blank" : undefined}
@@ -99,7 +99,7 @@ export function MainNav() {
                             aria-label={label}
                         >
                             <Icon className="h-4 w-4" />
-                        </Link>
+                        </a>
                     ))}
                 </div>
 

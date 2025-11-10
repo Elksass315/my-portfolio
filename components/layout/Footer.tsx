@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 function Mail({ className = "" }: { className?: string }) {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -52,22 +50,22 @@ export function Footer() {
                     </p>
                 </div>
                 <div className="flex flex-col gap-3 text-xs text-slate-400 sm:flex-row sm:text-sm">
-                    <Link href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 hover:text-sky-300">
+                    <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 hover:text-sky-300">
                         <Mail className="h-4 w-4" />
                         {siteConfig.email}
-                    </Link>
-                    <Link href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2 hover:text-sky-300">
+                    </a>
+                    <a href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`} className="flex items-center gap-2 hover:text-sky-300">
                         <Phone className="h-4 w-4" />
                         {siteConfig.phone}
-                    </Link>
-                    <Link href={siteConfig.social.linkedin} className="flex items-center gap-2 hover:text-sky-300" target="_blank" rel="noreferrer">
+                    </a>
+                    <a href={siteConfig.social.linkedin} className="flex items-center gap-2 hover:text-sky-300" target="_blank" rel="noreferrer">
                         <Linkedin className="h-4 w-4" />
                         LinkedIn
-                    </Link>
-                    <Link href={siteConfig.social.github} className="flex items-center gap-2 hover:text-sky-300" target="_blank" rel="noreferrer">
+                    </a>
+                    <a href={siteConfig.social.github} className="flex items-center gap-2 hover:text-sky-300" target="_blank" rel="noreferrer">
                         <Github className="h-4 w-4" />
                         GitHub
-                    </Link>
+                    </a>
                 </div>
             </div>
         </footer>
