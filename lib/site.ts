@@ -97,57 +97,25 @@ export const projectShowcase = [
         tech: ["Node.js", "MongoDB", "Express", "Docker"],
         linkLabel: "Play Store",
         linkUrl: "https://play.google.com/store",
-        image: "/images/projects/the-poultry.svg",
-    },
-    {
-        title: "Agri-tech 360",
+        image: "/images/projects/the-poultry.webp",
+    }, {
+        title: "Estqrar",
         description:
-            "AI-powered agriculture platform with crop recommendation and plant disease detection capabilities.",
-        stats: ["AI crop recommendations", "Disease detection", "IoT soil analysis integration"],
-        tech: ["Node.js", "AI/ML", "IoT", "MongoDB"],
-        linkLabel: "View Project",
-        linkUrl: "https://example.com/agritech-360",
-        image: "/images/projects/agritech-360.svg",
-    },
-    {
-        title: "CV ATS Master",
-        description:
-            "Professional CV builder app with PDF export, supporting Arabic and English with multiple templates.",
-        stats: ["100K+ downloads", "Multi-language support", "PDF export"],
-        tech: ["Node.js", "React Native", "PDF Generation", "Firebase"],
-        linkLabel: "Play Store",
-        linkUrl: "https://play.google.com/store",
-        image: "/images/projects/cv-ats-master.svg",
-    },
-    {
-        title: "B2B Burger Maker",
-        description:
-            "Restaurant system for customizing burgers layer-by-layer with user rewards and gamified sharing features.",
-        stats: ["Gamified rewards", "Admin control panel", "Layer customization"],
-        tech: ["Node.js", "Express", "MongoDB", "React"],
-        linkLabel: "View Demo",
-        linkUrl: "https://example.com/burger-maker",
-        image: "/images/projects/burger-maker.svg",
-    },
-    {
-        title: "Alinez Fit",
-        description:
-            "Personal trainer app with diet and exercise planning, featuring WebRTC video/audio calls and social feed.",
-        stats: ["WebRTC video calls", "Nutrition tracking", "Social trainer feed"],
-        tech: ["Node.js", "WebRTC", "NutritionX API", "MongoDB"],
-        linkLabel: "Explore App",
-        linkUrl: "https://example.com/alinez-fit",
-        image: "/images/projects/alinez-fit.svg",
+            "Community-first marriage platform with real-time chat, payments, and an insight-rich admin experience.",
+        stats: ["40k+ community members", "Realtime chat", "Payment integrations"],
+        tech: ["Node.js", "Socket.IO", "PostgreSQL", "AWS"],
+        linkLabel: "Product Tour",
+        linkUrl: "https://play.google.com/store/apps/details?id=com.astqrar.com",
+        image: "/images/projects/estqrar.png",
     },
     {
         title: "HERC Clinic",
         description:
             "Full medical clinic management system with patient CRM, appointment scheduling, and automated billing.",
-        stats: ["Patient CRM", "Automated billing", "Role-based access"],
+        stats: ["Patient CRM", "ERP", "Automated billing", "Role-based access"],
         tech: ["Node.js", "PostgreSQL", "Express", "Docker"],
         linkLabel: "Product Info",
-        linkUrl: "https://example.com/herc-clinic",
-        image: "/images/projects/herc-clinic.svg",
+        image: "/images/projects/hers-clinics.png",
     },
     {
         title: "Souvenir App",
@@ -156,8 +124,46 @@ export const projectShowcase = [
         stats: ["Video/audio lectures", "Multi-role system", "Free & paid courses"],
         tech: ["Node.js", "MongoDB", "Express", "AWS"],
         linkLabel: "Learn More",
-        linkUrl: "https://example.com/souvenir-app",
-        image: "/images/projects/souvenir-app.svg",
+        linkUrl: "https://play.google.com/store/apps/details?id=com.aoit.souvenir.prod",
+        image: "/images/projects/souvenir.png",
+    },
+    {
+        title: "Agri-tech 360",
+        description:
+            "AI-powered agriculture platform with crop recommendation and plant disease detection capabilities.",
+        stats: ["AI crop recommendations", "Disease detection", "IoT soil analysis integration"],
+        tech: ["Node.js", "AI/ML", "IoT", "MongoDB"],
+        linkLabel: "View Project",
+        image: "/images/projects/agri-tech-360.png",
+    },
+    {
+        title: "CV ATS Master",
+        description:
+            "Professional CV builder app with PDF export, supporting Arabic and English with multiple templates.",
+        stats: ["100K+ downloads", "Multi-language support", "PDF export"],
+        tech: ["Node.js", "React Native", "PDF Generation", "Firebase"],
+        linkLabel: "Play Store",
+        linkUrl: "https://play.google.com/store/apps/details?id=com.aiot.cv_ats_master",
+        image: "/images/projects/cv-ats-master.png",
+    },
+    {
+        title: "B2p Burger Maker",
+        description:
+            "Restaurant system for customizing burgers layer-by-layer with user rewards and gamified sharing features.",
+        stats: ["Gamified rewards", "Admin control panel", "Layer customization"],
+        tech: ["Node.js", "Express", "MongoDB", "React"],
+        linkLabel: "View Demo",
+        image: "/images/projects/b2p.png",
+    },
+    {
+        title: "Alinez Fit",
+        description:
+            "Personal trainer app with diet and exercise planning, featuring WebRTC video/audio calls and social feed.",
+        stats: ["WebRTC video calls", "Nutrition tracking", "Social trainer feed"],
+        tech: ["Node.js", "WebRTC", "NutritionX API", "MongoDB"],
+        linkLabel: "Coming Soon",
+        linkUrl: "https://tailwindflex.com/storage/thumbnails/simple-coming-soon-page-2/canvas.min.webp?v=1",
+        image: "/images/projects/alinez-fit.svg",
     },
     {
         title: "Book Academy",
@@ -166,18 +172,18 @@ export const projectShowcase = [
         stats: ["Live sessions", "Progress tracking", "Multi-role system"],
         tech: ["Node.js", "PostgreSQL", "Socket.IO", "Stripe"],
         linkLabel: "Visit Platform",
-        linkUrl: "https://example.com/book-academy",
-        image: "/images/projects/book-academy.svg",
+        linkUrl: "https://book-academy.me",
+        image: "/images/projects/book-academy.png",
     },
     {
         title: "Schema Platform",
         description:
             "Full e-learning portal for free and subscription-based courses with API-based delivery and user analytics.",
         stats: ["Content creator dashboard", "Course analytics", "API-based delivery"],
-        tech: ["Node.js", "MongoDB", "Express", "Redis"],
+        tech: ["Node.js", "MongoDB", "Nest.JS", "AWS", "Docker"],
         linkLabel: "Explore Platform",
-        linkUrl: "https://example.com/schema-platform",
-        image: "/images/projects/schema-platform.svg",
+        linkUrl: "https://schema.aiotgroups.com",
+        image: "/images/projects/schema.png",
     },
     {
         title: "Travel Sync",
@@ -186,18 +192,7 @@ export const projectShowcase = [
         stats: ["Realtime flight & hotel sync", "Role-based access", "Observability-driven operations"],
         tech: ["Node.js", "AWS", "PostgreSQL", "Redis"],
         linkLabel: "Product Demo",
-        linkUrl: "https://example.com/travel-sync",
-        image: "/images/projects/travel-sync.svg",
-    },
-    {
-        title: "Estqrar",
-        description:
-            "Community-first marriage platform with real-time chat, payments, and an insight-rich admin experience.",
-        stats: ["40k+ community members", "Realtime chat", "Payment integrations"],
-        tech: ["Node.js", "Socket.IO", "PostgreSQL", "AWS"],
-        linkLabel: "Product Tour",
-        linkUrl: "https://example.com/estqrar",
-        image: "/images/projects/estqrar.svg",
+        image: "/images/projects/travel-sync.png",
     },
     {
         title: "Hasala",
@@ -206,8 +201,8 @@ export const projectShowcase = [
         stats: ["Instant QR rewards", "Cloud-native deployment", "Visibility & logging"],
         tech: ["Node.js", "Redis", "Firebase", "Docker"],
         linkLabel: "See Prototype",
-        linkUrl: "https://example.com/hasala",
-        image: "/images/projects/hasala.svg",
+        linkUrl: "https://play.google.com/store/apps/details?id=com.app.hasala",
+        image: "/images/projects/hasala.png",
     },
 ];
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { clsx } from "clsx";
-import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
+import { Github, Linkedin, Mail, MessageCircle, Code2 } from "lucide-react";
 import { navLinks, siteConfig } from "@/lib/site";
 
 const socialLinks = [
@@ -38,13 +38,23 @@ export function MainNav() {
             <div className="glass-card gradient-border flex w-full max-w-6xl flex-col gap-5 rounded-3xl px-6 py-4 shadow-lg shadow-sky-500/10 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:py-3">
                 <div className="flex items-center gap-3">
                     <Link href="/" className="flex items-center gap-2 font-semibold tracking-tight">
+                        {/* <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-sky-500 to-blue-600 shadow-lg shadow-sky-500/30"
+                        >
+                            <Code2 className="h-4 w-4 text-white" />
+                        </motion.div> */}
                         <motion.span
                             initial={{ opacity: 0, y: -10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, ease: "easeOut" }}
-                            className="text-lg text-slate-100"
+                            className="flex items-center text-lg"
                         >
-                            {siteConfig.name}
+                            <span className="text-slate-600 text-xl">&lt;</span>
+                            <span className="text-slate-100">Elksass</span>
+                            <span className="text-slate-600 text-xl">/&gt;</span>
                         </motion.span>
                     </Link>
                     <span className="hidden h-6 w-px bg-slate-700/40 sm:block" />

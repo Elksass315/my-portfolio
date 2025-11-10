@@ -66,15 +66,18 @@ export function ProjectsGrid({ limit }: ProjectsGridProps) {
                             ))}
                         </ul>
                         <div className="mt-auto pt-2">
-                            <Link
-                                href={project.linkUrl}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="inline-flex items-center gap-2 text-sm font-semibold text-sky-300 transition hover:text-sky-200"
-                            >
-                                {project.linkLabel}
-                                <ExternalLink className="h-4 w-4" />
-                            </Link>
+                            
+                            {project.linkUrl && (
+                                <Link
+                                    href={project.linkUrl}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="inline-flex items-center gap-2 text-sm font-semibold text-sky-300 transition hover:text-sky-200"
+                                >
+                                    {project.linkLabel}
+                                    <ExternalLink className="h-4 w-4" />
+                                </Link>
+                            )}
                         </div>
                     </div>
                 </motion.article>
